@@ -312,8 +312,8 @@ h1 em, h2 em {
 }
 
 .hero-orb img {
-  width: 55%;
-  height: 55%;
+  width: 45%;
+  height: 45%;
   max-width: 55%;
   max-height: 55%;
   object-fit: contain;
