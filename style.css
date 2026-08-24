@@ -302,20 +302,37 @@ h1 em, h2 em {
 }
 
 .hero-orb {
-  width: 315px;
-  height: 315px;
+  width: 315px !important;
+  height: 315px !important;
+  aspect-ratio: auto !important;
+  margin: auto;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  flex-shrink: 0;
+
+  background:
+    radial-gradient(
+      circle at 35% 30%,
+      #b4ffd0 0 4%,
+      var(--jade-bright) 18%,
+      var(--jade) 48%,
+      #164f31 70%,
+      transparent 71%
+    );
+
+  box-shadow: 0 0 90px rgba(85,214,138,.3);
 }
 
 .hero-orb img {
-  width: 45%;
-  height: 45%;
-  max-width: 55%;
-  max-height: 55%;
+  width: 45px !important;
+  height: 45px !important;
+  max-width: 45px !important;
+  max-height: 45px !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
   object-fit: contain;
   display: block;
 }
