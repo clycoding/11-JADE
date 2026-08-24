@@ -301,10 +301,23 @@ h1 em, h2 em {
   box-shadow: 0 0 90px rgba(85,214,138,.3);
 }
 
-.hero-orb span {
-  font: 800 clamp(5rem, 11vw, 9rem)/1 "Outfit";
-  color: rgba(255,255,255,.85);
-  text-shadow: 0 8px 40px rgba(0,0,0,.3);
+.hero-orb {
+  width: 315px;
+  height: 315px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-orb img {
+  width: 55%;
+  height: 55%;
+  max-width: 55%;
+  max-height: 55%;
+  object-fit: contain;
+  display: block;
 }
 
 .scroll-hint {
